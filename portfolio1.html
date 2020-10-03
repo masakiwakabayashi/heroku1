@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesheet.css">
+        <!-- フォントオーサム -->
+        <script src="https://kit.fontawesome.com/c576016458.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+<!-- ヘッダー、グローバルナビゲーション -->
+<header>
+    <div class="container">
+    <div class="heading1">
+        <h1>Portfolio Site</h1>
+    </div>
+    <div class="navi">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#career">Career</a></li>
+          <li><a href="#skillset">Skill Set</a></li>
+          <li><a href="#product">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+     <!-- ファーストビュー -->
+    <div class="row fbg">
+        
+    </div>
+    </div>
+</header>
+<body>
+<div class="container">
+    <!-- 自己紹介と写真 -->
+    <div class="row">
+        <div class="col-12 heading2 about" id="about">
+            <h2>About</h2>
+        </div>
+        <div class="col-lg-6 me">
+            <!-- 名前 -->
+            <h3>Name:若林将輝(Wakabayashi Masaki)</h3>
+            <!-- 写真 -->
+            <p><img src="./IMG_1915.JPG" alt=""></p>
+        </div>
+        <div class="col-lg-6">
+            <!-- 経歴の概要 -->
+            <section>
+                静岡県静岡市出身。大学中退→専業アフィリエイター→ケータイショップ店員→学歴不問のベンチャーで営業職。
+                2020年4月から営業の仕事をしながら独学でプログラミングの学習を開始。言語はHTML,CSS,PHP,Bootstrap,Laravel。
+                海外ドラマを見ることが趣味。1993年生まれ。
+            </section>
+        </div>
+    </div>
+    <!-- これまでの経歴 -->
+    <div class="row">
+        <div class="col-12 heading2 car" id="career">
+            <h2>Career</h2>
+        </div>
+        <div class="col-12">
+            <p>2017年3月　富山大学工学部材料機能工学科 中退</p>
+        </div>
+        <div class="col-12">
+            <p>2017年3月〜2018年1月　アフィリエイター</p>
+        </div>
+        <div class="col-12">
+            <p>2018年1月〜2018年9月 ケータイショップの店員</p>
+        </div>
+        <div class="col-12">
+            <p>2018年10月〜2020年9月　リバースラボ営業部</p>
+        </div>
+    </div>
+    <!-- スキルセット -->
+    <div class="row">
+        <div class="col-12 heading2" id="skillset">
+            <h2>Skill Set</h2>
+        </div>
+        <div class="row skills">
+                <div class="skill"><i class="fab fa-5x fa-html5"></i><br><p>HTML</p></div>
+                <div class="skill"><i class="fab fa-5x fa-css3-alt"></i><br><p>CSS</p></div>
+                <div class="skill"><i class="fab fa-5x fa-php"></i><br><p>PHP</p></div>
+                <div class="skill"><i class="fab fa-5x fa-bootstrap"></i><br><p>Bootstrap</p></div>
+                <div class="skill"><i class="fab fa-5x fa-laravel"></i><br><p>Laravel</p></div>
+        </div>
+    </div>
+    <!-- 制作したプロダクト --><!-- 制作が完了したら載せる -->
+    <div class="row">
+        <div class="col-12 heading2" id="product">
+            <h2>Products</h2>
+        </div>
+        <div class="">
+            <p>Coming Soon</p>
+        </div>
+    </div>
+    <!-- 問い合わせフォーム -->
+    <div class="row">
+        <div class="col-12 heading2" id="contact">
+            <h2>Contact</h2>
+        </div>
+    </div>
+    <!--  -->
+    <div class="formtext">
+        <p>お問い合わせはこちらのフォームからお願いします</p>
+    </div>
+    <div class="forms row">
+        <div class="col fc">
+        <form action="mailto:masaki.wakabaya@gmail.com" method="post" enctype="text/plain">
+                    お名前<br>
+                    <input type="text" name="name" class="form" required><br>
+                    メールアドレス<br>
+                    <input type="email" name="mail" class="form" required><br>
+                    問い合わせ内容<br>
+                    <Textarea name="content" class="formcont" required></Textarea><br>
+            <input type="reset" class="btn btn-outline-success" value=" 取消 ">
+            <input type="submit" class="btn btn-outline-success" value=" 送信 ">
+        </form>
+        </div>
+    </div>
+    <!-- github -->
+    <div class="row">
+        <div class="col-12 git">
+            <a href="https://github.com/masakiwakabayashi" target="_blank"><i class="fab fa-2x fa-github"></i>githubはこちら</a>
+        </div>
+    </div>
+</div>
+<!-- コピーライト -->
+<footer>
+    <div class="foot">
+        <small>Copyright© Masaki Wakabayashi All Rights Reserved.</small>
+    </div>
+</footer>
+</body>
+</html>
