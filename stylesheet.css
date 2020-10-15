@@ -1,0 +1,140 @@
+
+header{
+    background-color: aqua;
+    background-image: url(./bg.jpg);
+    background-size: cover;
+    
+}
+
+.heading1{
+    margin: 0px;
+    
+}
+
+.head1{
+    margin-right: 0px;
+    margin-left: 0px;
+    
+}
+
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+a:hover{
+    color: aqua;
+    text-decoration-line: none;
+}
+
+a{
+    color: black;
+}
+
+
+
+.me img{
+    width: 50%;
+    height: auto;
+}
+
+.me{
+    text-align: center;
+}
+
+.heading2{
+    background-color: aqua;
+}
+
+.navi ul{
+    display: flex;
+    list-style: none;
+    display: table;
+    padding-left: 0px;
+}
+  
+  
+.navi li{
+    padding:10px;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 18px;
+}
+  
+.row{
+      margin-bottom: 30px;
+}
+
+.fbg{
+      height: 800px;
+      width: cover;
+
+}
+
+
+p,section{
+ font-size: 18px;
+}
+
+.car{
+    margin-bottom: 30px;
+}
+
+.about{
+    margin-bottom: 30px;
+}
+
+.skills{
+    display: flexbox;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 30px;
+}
+
+.skill{
+    text-align: center;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+
+.forms{
+    font-size: 18px;
+}
+
+.form{
+    width: 300px;
+}
+
+.formcont{
+    width: 300px;
+    height: 300px;
+}
+
+.forms{
+    padding-bottom: 30px;
+}
+
+
+.formtext{
+    text-align: center;
+}
+
+
+.fc{
+    text-align: center;
+}
+
+.git{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    margin-bottom:0px;
+    background-color: whitesmoke;
+}
+
+
