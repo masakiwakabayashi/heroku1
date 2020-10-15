@@ -11,6 +11,10 @@ header{
     
 }
 
+.heading1 h1{
+    font-size: 63px;
+}
+
 .head1{
     margin-right: 0px;
     margin-left: 0px;
@@ -27,6 +31,7 @@ h2{
 a:hover{
     color: aqua;
     text-decoration-line: none;
+    transition: 0.3s ;
 }
 
 a{
@@ -45,7 +50,11 @@ a{
 }
 
 .heading2{
-    background-color: aqua;
+    background-color: black;
+}
+
+h2{
+    color: white;
 }
 
 .navi ul{
@@ -60,7 +69,7 @@ a{
     padding:10px;
     display: table-cell;
     vertical-align: middle;
-    font-size: 18px;
+    font-size: 24px;
 }
   
 .row{
@@ -97,6 +106,8 @@ p,section{
     text-align: center;
     padding-right: 40px;
     padding-left: 40px;
+    padding-top: 10px;
+    width: 200px;
 }
 
 
@@ -129,6 +140,8 @@ p,section{
 
 .git{
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 footer{
@@ -138,3 +151,374 @@ footer{
 }
 
 
+
+/* skillset */
+
+
+.graph{
+    height: 30px;
+    width: 80%;
+    border:1px solid black;
+    display: flex;
+    margin: auto;
+    border-radius: 7px;
+}
+
+.gline1{
+    height: 100%;
+    width: 80%;
+    background-color:black;
+    border-radius: 7px;
+    /* border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px; */
+}
+
+.htmlskill{
+    margin: auto;
+    padding-top: 20px;
+    color:black;
+}
+
+
+.ngline{
+    width: auto;
+}
+
+
+.chart{
+    /* background-color: lawngreen; */
+    padding-right: 40px;
+    padding-left: 40px;
+    text-align: center;
+}
+
+
+.codeskill{
+    display: flex;
+}
+
+/* glineとthermometerだけは言語ごとに変わる */
+
+
+
+.gline2{
+    height: 100%;
+    width: 80%;
+    background-color:black;
+    border-radius: 7px;
+}
+
+.cssskill{
+    margin: auto;
+    padding-top: 20px;
+    color:black;
+}
+
+.gline3{
+    height: 100%;
+    width: 50%;
+    background-color:black;
+    border-radius: 7px;
+}
+
+.phpskill{
+    margin: auto;
+    padding-top: 20px;
+    color:black;
+}
+
+.gline4{
+    height: 100%;
+    width: 30%;
+    background-color:black;
+    border-radius: 7px;
+}
+
+
+.jsskill{
+    margin: auto;
+    padding-top: 20px;
+    color:black;
+}
+
+.gline5{
+    height: 100%;
+    width: 50%;
+    background-color:black;
+    border-radius: 7px;
+}
+
+.btskill{
+    margin: auto;
+    padding-top: 20px;
+    color:black;
+}
+
+
+.gline6{
+    height: 100%;
+    width: 30%;
+    background-color:black;
+    border-radius: 7px;
+}
+
+.laraskill{
+    margin: auto;
+    padding-top: 20px;
+    color:black;
+}
+
+.gline8{
+    height: 100%;
+    width: 30%;
+    background-color:black;
+    border-radius: 7px;
+}
+
+.wpskill{
+    margin: auto;
+    padding-top: 20px;
+    color:black;
+}
+
+
+.gline7{
+    height: 100%;
+    width: 100%;
+    background-color:black;
+    border-radius: 7px;
+}
+
+.paskill{
+    margin: auto;
+    padding-top: 20px;
+    color:black;
+}
+
+/* experience */
+
+.exbase{
+    background: rgba(0,0,0,0.3);
+    color: white;
+    border-radius: 7px;
+    text-align: center;
+    padding: 30px;
+}
+
+.excount{
+    font-size: 42px;
+}
+
+
+.personalex :hover{
+    background-color: cyan;
+    color: black;
+    transition: 0.3s ;
+}
+
+.studyep :hover{
+    background-color: cyan;
+    color: black;
+    transition: 0.3s ;
+}
+
+.salesep :hover{
+    background-color: cyan;
+    color: black;
+    transition: 0.3s ;
+}
+
+.personalex{
+    margin-top: 20px;
+}
+
+.studyep {
+    margin-top: 20px;
+}
+
+.salesep{
+    margin-top: 20px;
+}
+
+/* product */
+
+.prods{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prod{
+    padding:5px 20px;
+    cursor: pointer;
+}
+
+.prod p{
+    font-size: 24px;
+}
+
+.ports{
+    display: flex;
+}
+
+.port{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.port img{
+    height: auto;
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/*  */
+
+.testp{
+    height: 100%;
+    width: auto;
+}
+
+/* 横幅が922px以下の場合に作品の要素に適用するスタイル */
+.ptitle{
+    font-size: 45px;
+    position: absolute;
+    top: 30px;
+    left:60px;
+}
+
+/* 横幅が922px以下の場合に作品の要素に適用するスタイル */
+.pdesc{
+    font-size: 24px;
+    position: absolute;
+    top: 130px;
+    left:70px;
+}
+
+
+@media (min-width: 922px) {
+    /* 横幅が922px以上の場合に作品の要素に適用するスタイル */
+    .ptitle{
+        font-size: 24px;
+        position: absolute;
+        top: 30px;
+        left:40px;
+    }
+
+    .pdesc{
+        font-size: 18px;
+        position: absolute;
+        top: 100px;
+        left:50px;
+    }
+}
+
+/*  */
+
+.icon{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+/* ローディングアニメーション */
+@keyframes scaleout{
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+}
+
+.anime{
+    height: 100px;
+    width: 100px;
+    background-color: cyan;
+    margin: 200px auto;
+    animation: scaleout ;
+    animation-duration: 3s;
+}
+
+.hide{
+    display: none;
+}
+
+/*フェードイン*/
+/*左から右にフェードイン*/
+.left-to-right{
+    opacity: 0.1;
+    transform: translateX(-20px);
+    transition: all 1s;
+  }
+  
+.left-to-right.scrollin {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* 右から左にフェードイン */
+.right-to-left{
+  opacity: 0.1;
+  transform: translateX(20px);
+  transition: all 1s;
+}
+
+.right-to-left.scrollin {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/*下から上にフェードイン*/
+.down-to-top {
+  opacity: 0.1;
+  transform: translateY(20px);
+  transition: all 1s;
+}
+
+.down-to-top.scrollin {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */

@@ -8,127 +8,315 @@
         <link rel="stylesheet" href="stylesheet.css">
         <!-- フォントオーサム -->
         <script src="https://kit.fontawesome.com/c576016458.js" crossorigin="anonymous"></script>
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <title>Portfolio</title>
 </head>
-<!-- ヘッダー、グローバルナビゲーション -->
-<header>
-    <div class="container">
-    <div class="heading1">
-        <h1>Portfolio Site</h1>
-    </div>
-    <div class="navi">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#career">Career</a></li>
-          <li><a href="#skillset">Skill Set</a></li>
-          <li><a href="#product">Products</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-     <!-- ファーストビュー -->
-    <div class="row fbg">
-        
-    </div>
-    </div>
-</header>
 <body>
-<div class="container">
-    <!-- 自己紹介と写真 -->
-    <div class="row">
-        <div class="col-12 heading2 about" id="about">
-            <h2>About</h2>
-        </div>
-        <div class="col-lg-6 me">
-            <!-- 名前 -->
-            <h3>Name:若林将輝(Wakabayashi Masaki)</h3>
-            <!-- 写真 -->
-            <p><img src="./IMG_1915.JPG" alt=""></p>
-        </div>
-        <div class="col-lg-6">
-            <!-- 経歴の概要 -->
-            <section>
-                静岡県静岡市出身。大学中退→専業アフィリエイター→ケータイショップ店員→学歴不問のベンチャーで営業職。
-                2020年4月から営業の仕事をしながら独学でプログラミングの学習を開始。言語はHTML,CSS,PHP,Bootstrap,Laravel。
-                海外ドラマを見ることが趣味。1993年生まれ。
-            </section>
-        </div>
+    <!-- ローディングアニメーション -->
+    <div id="loading" class="hide">
+        <!-- このanimeのクラスがアニメーションするクラス -->
+        <div class="anime"></div>
     </div>
-    <!-- これまでの経歴 -->
-    <div class="row">
-        <div class="col-12 heading2 car" id="career">
-            <h2>Career</h2>
+<div id="all" class="hide">
+    <!-- ヘッダー、グローバルナビゲーション -->
+    <header>
+        <div class="container">
+            <div class="heading1">
+                <h1>Portfolio Site</h1>
+            </div>
+            <div class="navi">
+                <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#career">Career</a></li>
+                <li><a href="#skillset">Skill Set</a></li>
+                <li><a href="#product">Products</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- ファーストビュー -->
+            <div class="row fbg">
+                
+            </div>
         </div>
-        <div class="col-12">
-            <p>2017年3月　富山大学工学部材料機能工学科 中退</p>
+    </header>
+    <div class="container">
+        <!-- 自己紹介と写真 -->
+        <div class="row">
+            <div class="col-12 heading2 about down-to-top" id="about">
+                <h2>About</h2>
+            </div>
+            <div class="col-lg-6 me left-to-right">
+                <!-- 名前 -->
+                <h3>Name:若林将輝(Wakabayashi Masaki)</h3>
+                <!-- 写真 -->
+                <p><img src="./IMG_1915.JPG" alt=""></p>
+            </div>
+            <div class="col-lg-6 right-to-left">
+                <!-- 経歴の概要 -->
+                <section>
+                    静岡県静岡市出身。大学中退→専業アフィリエイター→ケータイショップ店員→学歴不問のベンチャーで営業職。
+                    2020年4月から営業の仕事をしながら独学でプログラミングの学習を開始。言語はHTML,CSS,PHP,Bootstrap,Laravel。
+                    海外ドラマを見ることが趣味。1993年生まれ。
+                </section>
+            </div>
         </div>
-        <div class="col-12">
-            <p>2017年3月〜2018年1月　アフィリエイター</p>
+        <!-- これまでの経歴 -->
+        <div class="row">
+            <div class="col-12 heading2 car down-to-top" id="career">
+                <h2>Career</h2>
+            </div>
+            <div class="col-12 left-to-right">
+                <p>2017年3月　富山大学工学部材料機能工学科 中退</p>
+            </div>
+            <div class="col-12 left-to-right">
+                <p>2017年3月〜2018年1月　アフィリエイター</p>
+            </div>
+            <div class="col-12 left-to-right">
+                <p>2018年1月〜2018年9月 ケータイショップの店員</p>
+            </div>
+            <div class="col-12 left-to-right">
+                <p>2018年10月〜2020年9月　リバースラボ営業部</p>
+            </div>
         </div>
-        <div class="col-12">
-            <p>2018年1月〜2018年9月 ケータイショップの店員</p>
-        </div>
-        <div class="col-12">
-            <p>2018年10月〜2020年9月　リバースラボ営業部</p>
-        </div>
-    </div>
-    <!-- スキルセット -->
-    <div class="row">
-        <div class="col-12 heading2" id="skillset">
-            <h2>Skill Set</h2>
-        </div>
-        <div class="row skills">
+        <!-- スキルセット -->
+        <div class="row">
+            <div class="col-12 heading2 down-to-top" id="skillset">
+                <h2>Skill Set</h2>
+            </div>
+            <!-- HTML -->
+            <div class="codeskill col-12 down-to-top">
+                <!-- アイコンと言語名 -->
                 <div class="skill"><i class="fab fa-5x fa-html5"></i><br><p>HTML</p></div>
+                <!-- グラフ -->
+                <div class="graph">
+                    <div class="gline1"></div>
+                    <div class="ngline"></div>
+                </div>
+                <!-- 度合い -->
+                <div class="chart">
+                    <i class="fas fa-5x fa-thermometer-three-quarters htmlskill"></i>
+                    <p>6month</p>
+                </div>
+            </div>
+            <!-- CSS -->
+            <div class="codeskill col-12 down-to-top">
+                <!-- アイコンと言語名 -->
                 <div class="skill"><i class="fab fa-5x fa-css3-alt"></i><br><p>CSS</p></div>
+                <!-- グラフ -->
+                <div class="graph">
+                    <div class="gline2"></div>
+                    <div class="ngline"></div>
+                </div>
+                <!-- 度合い -->
+                <div class="chart">
+                    <i class="fas fa-5x fa-thermometer-three-quarters cssskill"></i>
+                    <p>6month</p>
+                </div>
+            </div>
+            <!-- PHP -->
+            <div class="codeskill col-12 down-to-top">
+                <!-- アイコンと言語名 -->
                 <div class="skill"><i class="fab fa-5x fa-php"></i><br><p>PHP</p></div>
+                <!-- グラフ -->
+                <div class="graph">
+                    <div class="gline3"></div>
+                    <div class="ngline"></div>
+                </div>
+                <!-- 度合い -->
+                <div class="chart">
+                    <i class="fas fa-5x fa-thermometer-half phpskill"></i>
+                    <p>3month</p>
+                </div>
+            </div>
+            <!-- JavaScript -->
+            <div class="codeskill col-12 down-to-top">
+                <!-- アイコンと言語名 -->
+                <div class="skill"><i class="fab fa-5x fa-js"></i><br><p>JavaScript</p></div>
+                <!-- グラフ -->
+                <div class="graph">
+                    <div class="gline4"></div>
+                    <div class="ngline"></div>
+                </div>
+                <!-- 度合い -->
+                <div class="chart">
+                    <i class="fas fa-5x fa-thermometer-quarter jsskill"></i>
+                    <p>2month</p>
+                </div>
+            </div>
+            <!-- WordPress -->
+                <div class="codeskill col-12 down-to-top">
+                <!-- アイコンと言語名 -->
+                <div class="skill"><i class="fab fa-5x fa-wordpress"></i><br><p>WordPress</p></div>
+                <!-- グラフ -->
+                <div class="graph">
+                    <div class="gline8"></div>
+                    <div class="ngline"></div>
+                </div>
+                <!-- 度合い -->
+                <div class="chart">
+                    <i class="fas fa-5x fa-thermometer-quarter wpskill"></i>
+                    <p>2month</p>
+                    </div>
+                </div>
+            <!-- Bootstrap -->
+            <div class="codeskill col-12 down-to-top">
+                <!-- アイコンと言語名 -->
                 <div class="skill"><i class="fab fa-5x fa-bootstrap"></i><br><p>Bootstrap</p></div>
+                <!-- グラフ -->
+                <div class="graph">
+                    <div class="gline5"></div>
+                    <div class="ngline"></div>
+                </div>
+                <!-- 度合い -->
+                <div class="chart">
+                    <i class="fas fa-5x fa-thermometer-half btskill"></i>
+                    <p>4month</p>
+                </div>
+            </div>
+            <!-- Laravel -->
+            <div class="codeskill col-12 down-to-top">
+                <!-- アイコンと言語名 -->
                 <div class="skill"><i class="fab fa-5x fa-laravel"></i><br><p>Laravel</p></div>
+                <!-- グラフ -->
+                <div class="graph">
+                    <div class="gline6"></div>
+                    <div class="ngline"></div>
+                </div>
+                <!-- 度合い -->
+                <div class="chart">
+                    <i class="fas fa-5x fa-thermometer-quarter laraskill"></i>
+                    <p>1month</p>
+                </div>
+            </div>
+            <!-- Passion -->
+            <div class="codeskill col-12 down-to-top">
+                <!-- アイコンと言語名 -->
+                <div class="skill"><i class="fas fa-5x fa-fire-alt"></i><br><p>Passion</p></div>
+                <!-- グラフ -->
+                <div class="graph">
+                    <div class="gline7"></div>
+                    <div class="ngline"></div>
+                </div>
+                <!-- 度合い -->
+                <div class="chart">
+                    <i class="fas fa-5x fa-thermometer-full paskill"></i>
+                    <p>26years</p>
+                </div>
+            </div>
+        </div>
+        <!-- 制作したプロダクト --><!-- 制作が完了したら載せる -->
+        <div class="row">
+            <div class="col-12 heading2 down-to-top" id="product">
+                <h2>Products</h2>
+            </div>
+            <div class="col-12 prods down-to-top">
+                <div class="prod">
+                    <p id="1" onclick="clickBtn1()">HTML/CSS</p>
+                </div>
+                <div class="prod">
+                    <p id="2" onclick="clickBtn2()">WordPress</p>
+                </div>
+                <div class="prod">
+                    <p id="3" onclick="clickBtn3()">JavaScript</p>
+                </div>
+            </div>
+            <!-- ここからが作品 -->
+            <div class="col-lg-4 port left-to-right" id="air" onmouseover="over1()" onmouseleave="leave1()">
+                <a class="plink" href="">
+                    <p id="title1" class="ptitle">AirbnbのLPの模写</p>
+                    <p id="desc1" class="pdesc">使用言語：HTML/CSS</p>
+                    <img id="img1" src="./11.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-4 port down-to-top" id="wptest" onmouseover="over2()" onmouseleave="leave2()">
+                <a class="plink" href="">
+                    <p id="title2" class="ptitle">自作のWordPressテーマ</p>
+                    <p id="desc2" class="pdesc">使用言語：HTML/CSS+WordPress</p>
+                    <img id="img2" src="./12.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-4 port right-to-left" id="ybbg" onmouseover="over3()" onmouseleave="leave3()">
+                <a class="plink" href="">
+                    <p id="title3" class="ptitle">Coming Soon...</p>
+                    <p id="desc3" class="pdesc">使用言語：HTML/CSS+JavaScript</p>
+                    <img id="img3" src="./13.jpg" alt="">
+                </a>
+            </div>
+            <!-- ここまで作品 -->
+        </div>
+        <!-- 経験 -->
+        <div class="row">
+            <div class="col-12 heading2" id="experience">
+                <h2>Experience</h2>
+            </div>
+            <div class="col-lg-4 personalex left-to-right">
+                <div class="exbase">
+                    <i class="fas fa-7x fa-code"></i>
+                    <p class="excount">3</p>
+                    <p>Personal Products</p>
+                </div>
+            </div>
+            <div class="col-lg-4 studyep down-to-top">
+                <div class="exbase">
+                    <i class="fas fa-7x fa-laptop"></i>
+                    <p class="excount">6month</p>
+                    <p>Personal Experience</p>
+                </div>
+            </div>
+            <div class="col-lg-4 salesep right-to-left">
+                <div class="exbase">
+                    <i class="far fa-7x fa-handshake"></i>
+                    <p class="excount">18month</p>
+                    <p>Sales Experience</p>
+                </div>
+            </div>
+        </div>
+        <!-- 問い合わせフォーム -->
+        <div class="row">
+            <div class="col-12 heading2 down-to-top" id="contact">
+                <h2>Contact</h2>
+            </div>
+        </div>
+        <!--  -->
+        <div class="formtext down-to-top">
+            <p>お問い合わせはこちらのフォームからお願いします</p>
+        </div>
+        <div class="forms row left-to-right">
+            <div class="col fc">
+            <form action="mailto:masaki.wakabaya@gmail.com" method="post" enctype="text/plain">
+                        お名前<br>
+                        <input type="text" name="name" class="form" required><br>
+                        メールアドレス<br>
+                        <input type="email" name="mail" class="form" required><br>
+                        問い合わせ内容<br>
+                        <Textarea name="content" class="formcont" required></Textarea><br>
+                <input type="reset" class="btn btn-outline-dark" value=" 取消 ">
+                <input type="submit" class="btn btn-outline-dark" value=" 送信 ">
+            </form>
+            </div>
         </div>
     </div>
-    <!-- 制作したプロダクト --><!-- 制作が完了したら載せる -->
-    <div class="row">
-        <div class="col-12 heading2" id="product">
-            <h2>Products</h2>
-        </div>
-        <div class="">
-            <p>Coming Soon</p>
-        </div>
-    </div>
-    <!-- 問い合わせフォーム -->
-    <div class="row">
-        <div class="col-12 heading2" id="contact">
-            <h2>Contact</h2>
-        </div>
-    </div>
-    <!--  -->
-    <div class="formtext">
-        <p>お問い合わせはこちらのフォームからお願いします</p>
-    </div>
-    <div class="forms row">
-        <div class="col fc">
-        <form action="mailto:masaki.wakabaya@gmail.com" method="post" enctype="text/plain">
-                    お名前<br>
-                    <input type="text" name="name" class="form" required><br>
-                    メールアドレス<br>
-                    <input type="email" name="mail" class="form" required><br>
-                    問い合わせ内容<br>
-                    <Textarea name="content" class="formcont" required></Textarea><br>
-            <input type="reset" class="btn btn-outline-success" value=" 取消 ">
-            <input type="submit" class="btn btn-outline-success" value=" 送信 ">
-        </form>
-        </div>
-    </div>
-    <!-- github -->
-    <div class="row">
+    <!-- コピーライト -->
+    <footer>
+        <!-- githubとSNS -->
         <div class="col-12 git">
-            <a href="https://github.com/masakiwakabayashi" target="_blank"><i class="fab fa-2x fa-github"></i>githubはこちら</a>
+            <!-- facebook -->
+            <a class="icon" href=""><i class="fab fa-3x fa-facebook-square"></i></a>
+            <!-- Instagram -->
+            <a class="icon" href=""><i class="fab fa-3x fa-instagram-square"></i></a>
+            <!-- github -->
+            <a class="icon" href="https://github.com/masakiwakabayashi" target="_blank"><i class="fab fa-3x fa-github"></i></a>
         </div>
-    </div>
+        <div class="foot">
+            <small>Copyright© Masaki Wakabayashi All Rights Reserved.</small>
+        </div>
+    </footer>
 </div>
-<!-- コピーライト -->
-<footer>
-    <div class="foot">
-        <small>Copyright© Masaki Wakabayashi All Rights Reserved.</small>
-    </div>
-</footer>
+        <script type="text/javascript" src="./display.js"></script> 
+        <script type="text/javascript" src="./product.js"></script>
+        <script type="text/javascript" src="./load.js"></script>
+        <script type="text/javascript" src="./fade.js"></script>
 </body>
 </html>
