@@ -22,11 +22,11 @@ header{
 }
 
 /* ヘッダースマホ対応 */
-@media (min-width: 560px) {
-    /* 横幅が560px以上の場合にヘッダー部分に適用するスタイル */
+@media (min-width: 600px) {
+    /* 横幅が600px以上の場合にヘッダー部分に適用するスタイル */
     .fbg{
         height: 500px;
-        width: 560px;
+        width: 100%;
     }
     .navi ul{
         list-style: none;
