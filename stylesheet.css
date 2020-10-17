@@ -28,7 +28,7 @@ header{
         height: 500px;
         width: 560px;
     }
-    /* .navi ul{
+    .navi ul{
         list-style: none;
         padding-left: 0px;
     }
@@ -36,7 +36,7 @@ header{
         padding:10px;
         vertical-align: middle;
         font-size: 24px;
-    } */
+    }
 }
 
 
