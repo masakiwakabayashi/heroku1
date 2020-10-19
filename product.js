@@ -50,6 +50,8 @@
                 title1.style.color ="black";
                 //使用言語の文字だけ黒くする
                 desc1.style.color ="black";
+                // 画像の拡大の倍率、変化の速度はCSSで指定
+                img1.style.transform ="scale(1.1)";
             }
         
             //1つ目の作品のマウスを話した時の関数
@@ -60,6 +62,8 @@
                 desc1.style.display ="none";
                 // 画像を透過せず表示
                 img1.style.opacity = "1";
+                // 拡大された画像を元の大きさに戻す処理
+                img1.style.transform ="scale(1.0)";
             }
 
             //2つ目の作品のマウスオーバーした時の関数
@@ -74,6 +78,8 @@
                 title2.style.color ="black";
                 //使用言語の文字だけ黒くする
                 desc2.style.color ="black";
+                // 画像の拡大の倍率、変化の速度はCSSで指定
+                img2.style.transform ="scale(1.1)";
             }
         
             //2つ目の作品のマウスを話した時の関数
@@ -84,6 +90,8 @@
                 desc2.style.display ="none";
                 // 画像を透過せず表示
                 img2.style.opacity = "1";
+                // 拡大された画像を元の大きさに戻す処理
+                img2.style.transform ="scale(1.0)";
             }
 
             //3つ目の作品のマウスオーバーした時の関数
@@ -98,6 +106,8 @@
                 title3.style.color ="black";
                 //使用言語の文字だけ黒くする
                 desc3.style.color ="black";
+                // 画像の拡大の倍率、変化の速度はCSSで指定
+                img3.style.transform ="scale(1.1)";
             }
         
             //3つ目の作品のマウスを話した時の関数
@@ -108,4 +118,6 @@
                 desc3.style.display ="none";
                 // 画像を透過せず表示
                 img3.style.opacity = "1";
+                // 拡大された画像を元の大きさに戻す処理
+                img3.style.transform ="scale(1.0)";
             }

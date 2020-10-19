@@ -385,6 +385,7 @@ footer{
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    overflow: hidden;
 }
 
 .port img{
@@ -392,6 +393,7 @@ footer{
     width: 100%;
     margin-right: 10px;
     margin-left: 10px;
+    transition-duration: 0.3s;
 }
 
 /*  */
